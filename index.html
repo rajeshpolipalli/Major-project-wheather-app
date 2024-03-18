@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="./Assets/styles.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css" />
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <title>Weather Forecast</title>
+</head>
+
+<body>
+    <!-- Header Weather Forecast  -->
+    <nav class="nav-bar">
+        <h1>Weather Forecast</h1>
+        <div id="currentDay" class="text-center">
+        </div>
+    </nav>
+    <!-- Main Content Container -->
+    <div class="container" style="max-width: 90%;">
+        <!-- Main Content Row -->
+        <div class="row">
+            <!-- City Search Bar -->
+            <div class="col-sm-12 col-lg-4 bg-light">
+                <!-- Search Form with Button -->
+                <div>
+                    <p><h3>search your place</h3></p>
+                </div>
+                <div class="input-group mb-3">
+                    <input id="city-input" type="text" class="form-control" placeholder="Enter City Name"
+                        aria-label="Enter city name">
+                    <div class="input-group-append">
+                        <button class="btn btn-primary" type="button" id="search-button">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </div>
+                </div>
+                <button class="btn md-3" type="button" id="clear-history">Clear History</button>
+                <!--Searched City List -->
+                <p><h6>Recently searched cities:</h6></p>
+                <!-- added ul with class to remove unordered list style from button -->
+                <ul class="is-hidden" style='list-style:none' id="historyList">
+                </ul>
+            </div>
+            <div class="col-sm-12 col-lg-8">
+                <div class="row mr-0">
+                    <div class="col-12 m-3 rounded">
+                        <div class="row">
+
+                            <div class="col-sm-12 col-lg-8">
+                                <span id="city-name" class="city-name align-middle"></span>
+                            </div>
+                        </div>
+                        <!-- Weather Information Column -->
+                        <div class="row">
+                            <!-- Weather Information Column -->
+                            <div class="col-12 box">
+                                <div id="cityList">
+                                    <h3>City Name:</h3>
+                                </div>
+                                <div class="col-md-4">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- </div> -->
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-10 list">
+                        <h3>5-Day Forecast</h3>
+                    </div>
+                </div>
+                <!-- 5 Days Weather Forcast list here -->
+                <div class="row" id="days">
+                </div>
+            </div>
+        </div>
+    </div>
+    <nav class="footer">
+        <div class="footer-text">Copyright @ 2024 -<a href="https://github.com/rajeshpolipalli">polipalliRajesh</a>
+        </div>
+    </nav>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+
+    <script src="./Assets/script.js"></script>
+</body>
+
+</html>

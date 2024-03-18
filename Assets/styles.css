@@ -1,0 +1,126 @@
+/* background */
+body{
+    background-image: url("./wheather2.jpg");
+    -webkit-background-size: cover;
+    background-repeat: no-repeat ;
+    background-attachment: fixed;
+}
+/* Header text */
+.header-text {
+    font-size:3rem;  
+    line-height: 1.2;
+    color: #000000;
+   
+  }  
+/* navbar styles */
+.nav-bar{
+  text-align: center;
+  background-color: hsl(182, 42%, 52%); 
+  border-bottom: solid;
+  border-bottom-color: #856404;  
+  border-bottom-width: 5px; 
+}
+/* Search button color */
+.btn {
+  color: #fff;
+  background-color: #7b141e;
+}
+/* Current Day Schedular ID */
+#currentDay{
+    padding: 0px;
+    font-size: 20px;
+    font-weight: 700;
+    color: lime;
+    text-align: center;
+    margin: 0em;    
+  }
+  /* footer nar bar  */
+.footer {
+    background-color:  #ece5ec;   
+    height: 7%;    
+    border-top: solid;
+    border-top-color: #856404;  
+    border-top-width: 5px;
+    text-align: center; 
+    display: block;
+    position: fixed;
+    bottom: 0;
+    width: 100%;    
+  }
+/* footer text */
+  .footer-text{
+    width: 100%;
+    text-align: center;
+    font-size: 15px;
+    color:hsl(0, 12%, 68%);
+    padding: 12px;
+  }
+  /* for temperature data display body area */
+   .col-12 .box {   
+    background:whitesmoke;
+    border-radius: 12px;
+    width: 760px;
+    margin-top: -2px;
+    margin-left: -10px;
+}
+/* temperature font */
+.temperatureFont {
+  font-family: 'Quicksand', sans-serif;
+}
+/* for city searched box  */
+.bg-primary{
+  border-radius: 10px;
+}
+/* temperature display box  */
+.bg-light { 
+  margin-top: 15px;
+  /* margin-left: 10px; */
+  border-radius: 10px;
+  margin-bottom: 17px;  
+}
+/* forecaste Image size */
+.imgsize {
+  width: 100px;
+  float: right;
+  margin-right: 50%;
+}
+/* searched city button  */
+li{
+  margin-bottom: 10px;
+  margin-left: -40px;
+}
+/*Large devices (desktops, 992px and up) */
+@media only screen and (max-width:992px) {
+  .navbar .header-text{       
+    padding-bottom: 0;
+    border-bottom: solid;   
+    width: 100%;
+    text-align: center;
+    height: 10%;
+  }
+  .footer {     
+    height: 7%;    
+    border-top: solid;      
+    border-top-width: 5px;
+    text-align: center; 
+  }
+}
+/*Small devices (landscape phones, 320px and up)*/
+@media only screen and (max-width:320px) { 
+.col-12 .box {
+  width: 100%;
+}
+.container{
+  width: 100%;
+}
+.navbar .footer .col-4 .row .nav{
+  width: 100%;
+  height:auto;  
+}
+.header-text{
+  font-size: 16px;
+}
+}
+#days{
+margin-left: -25px;
+}
